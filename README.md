@@ -254,6 +254,9 @@ An OpenSSL TLS server may crash if sent a maliciously crafted renegotiation Clie
 
 - [terorie/cve-2021-3449](https://github.com/terorie/cve-2021-3449)
 
+### CVE-2021-6666
+- [givemefivw/CVE-2021-6666](https://github.com/givemefivw/CVE-2021-6666)
+
 ### CVE-2021-11111
 - [hu185396/CVE-2021-11111](https://github.com/hu185396/CVE-2021-11111)
 
@@ -557,6 +560,9 @@ A local privilege escalation was discovered in the Linux kernel before 5.10.13. 
 ### CVE-2021-26828
 - [hevox/CVE-2021-26828_ScadaBR_RCE](https://github.com/hevox/CVE-2021-26828_ScadaBR_RCE)
 
+### CVE-2021-26832
+- [NagliNagli/CVE-2021-26832](https://github.com/NagliNagli/CVE-2021-26832)
+
 ### CVE-2021-26855 (2021-03-02)
 
 <code>
@@ -597,7 +603,6 @@ Microsoft Exchange Server Remote Code Execution Vulnerability This CVE ID is uni
 - [shacojx/CVE-2021-26855-exploit-Exchange](https://github.com/shacojx/CVE-2021-26855-exploit-Exchange)
 - [hictf/CVE-2021-26855-CVE-2021-27065](https://github.com/hictf/CVE-2021-26855-CVE-2021-27065)
 - [praetorian-inc/proxylogon-exploit](https://github.com/praetorian-inc/proxylogon-exploit)
-- [inpalmer/MSE-Exchange-Alert-Check](https://github.com/inpalmer/MSE-Exchange-Alert-Check)
 - [Flangvik/SharpProxyLogon](https://github.com/Flangvik/SharpProxyLogon)
 
 ### CVE-2021-26857 (2021-03-02)
@@ -753,6 +758,14 @@ Mahara 20.10 is affected by Cross Site Request Forgery (CSRF) that allows a remo
 ### CVE-2021-29386
 - [Umarovm/PowerSchool-Grade-Stealer](https://github.com/Umarovm/PowerSchool-Grade-Stealer)
 
+### CVE-2021-29627 (2021-04-07)
+
+<code>
+In FreeBSD 13.0-STABLE before n245050, 12.2-STABLE before r369525, 13.0-RC4 before p0, and 12.2-RELEASE before p6, listening socket accept filters implementing the accf_create callback incorrectly freed a process supplied argument string. Additional operations on the socket can lead to a double free or use after free.
+</code>
+
+- [raymontag/cve-2021-29627](https://github.com/raymontag/cve-2021-29627)
+
 ### CVE-2021-30109 (2021-04-05)
 
 <code>
@@ -784,6 +797,9 @@ Composr 10.0.36 allows XSS in an XML script.
 </code>
 
 - [orionhridoy/CVE-2021-30150](https://github.com/orionhridoy/CVE-2021-30150)
+
+### CVE-2021-100000
+- [Henry4E36/CVE-2021-100000](https://github.com/Henry4E36/CVE-2021-100000)
 
 
 ## 2020
@@ -1880,6 +1896,7 @@ In BIG-IP versions 15.0.0-15.1.0.3, 14.1.0-14.1.2.5, 13.1.0-13.1.3.3, 12.1.0-12.
 - [superzerosec/cve-2020-5902](https://github.com/superzerosec/cve-2020-5902)
 - [ludy-dev/BIG-IP-F5-TMUI-RCE-Vulnerability](https://github.com/ludy-dev/BIG-IP-F5-TMUI-RCE-Vulnerability)
 - [faisalfs10x/F5-BIG-IP-CVE-2020-5902-shodan-scanner](https://github.com/faisalfs10x/F5-BIG-IP-CVE-2020-5902-shodan-scanner)
+- [haisenberg/CVE-2020-5902](https://github.com/haisenberg/CVE-2020-5902)
 
 ### CVE-2020-5903 (2020-07-01)
 
@@ -3692,7 +3709,7 @@ An issue was discovered in INNEO Startup TOOLS 2017 M021 12.0.66.3784 through 20
 ### CVE-2020-15778 (2020-07-24)
 
 <code>
-scp in OpenSSH through 8.3p1 allows command injection in the scp.c toremote function, as demonstrated by backtick characters in the destination argument. NOTE: the vendor reportedly has stated that they intentionally omit validation of &quot;anomalous argument transfers&quot; because that could &quot;stand a great chance of breaking existing workflows.&quot;
+** DISPUTED ** scp in OpenSSH through 8.3p1 allows command injection in the scp.c toremote function, as demonstrated by backtick characters in the destination argument. NOTE: the vendor reportedly has stated that they intentionally omit validation of &quot;anomalous argument transfers&quot; because that could &quot;stand a great chance of breaking existing workflows.&quot;
 </code>
 
 - [cpandya2909/CVE-2020-15778](https://github.com/cpandya2909/CVE-2020-15778)
@@ -9010,7 +9027,7 @@ Vulnerability in the Oracle WebLogic Server component of Oracle Fusion Middlewar
 </code>
 
 - [jas502n/CVE-2018-3252](https://github.com/jas502n/CVE-2018-3252)
-- [b1ueb0y/CVE-2018-3252](https://github.com/b1ueb0y/CVE-2018-3252)
+- [cfan6/CVE-2018-3252](https://github.com/cfan6/CVE-2018-3252)
 - [pyn3rd/CVE-2018-3252](https://github.com/pyn3rd/CVE-2018-3252)
 
 ### CVE-2018-3260
@@ -18198,6 +18215,14 @@ Nortel Wireless LAN (WLAN) Access Point (AP) 2220, 2221, and 2225 allow remote a
 
 
 ## 2003
+### CVE-2003-0201 (2003-04-15)
+
+<code>
+Buffer overflow in the call_trans2open function in trans2.c for Samba 2.2.x before 2.2.8a, 2.0.10 and earlier 2.0.x versions, and Samba-TNG before 0.3.2, allows remote attackers to execute arbitrary code.
+</code>
+
+- [KernelPan1k/trans2open-CVE-2003-0201](https://github.com/KernelPan1k/trans2open-CVE-2003-0201)
+
 ### CVE-2003-0222 (2003-04-30)
 
 <code>
